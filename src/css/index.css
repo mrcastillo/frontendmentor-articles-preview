@@ -1,0 +1,110 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+  background: #ecf2f8;
+  font-family: 'Manrope', sans-serif; }
+
+.app-container .article-card-container {
+  display: grid; }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
+  p {
+    font-size: 13px; }
+  .app-container {
+    margin: 5em 2em;
+    line-height: 1.4em; }
+    .app-container .article-card-container {
+      background: white;
+      border-radius: 8px; }
+      .app-container .article-card-container .article-card-image {
+        height: 100%;
+        width: 100%; }
+        .app-container .article-card-container .article-card-image img {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          height: 180px;
+          width: 100%;
+          object-fit: cover; }
+      .app-container .article-card-container .article-card-text {
+        margin-bottom: 1em;
+        padding: 1.7em 1.7em 0em 1.7em; }
+        .app-container .article-card-container .article-card-text h4 {
+          color: #48556a;
+          margin-bottom: .5em; }
+        .app-container .article-card-container .article-card-text p {
+          color: #6d7f97;
+          font-weight: 500; }
+      .app-container .article-card-container .article-card-social {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        height: 50px;
+        padding: 1em 1.7em 1em 1.7em;
+        transition: background-color 1s; }
+        .app-container .article-card-container .article-card-social .article-card-social-img img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50px; }
+        .app-container .article-card-container .article-card-social .article-card-social-active-share {
+          display: none;
+          visibility: hidden; }
+        .app-container .article-card-container .article-card-social .article-card-social-name-date {
+          flex: 1;
+          margin-left: 1em; }
+          .app-container .article-card-container .article-card-social .article-card-social-name-date #name {
+            font-weight: 800;
+            color: #48556a; }
+          .app-container .article-card-container .article-card-social .article-card-social-name-date #date {
+            color: #9eafc2; }
+        .app-container .article-card-container .article-card-social .article-card-social-icons {
+          display: none;
+          visibility: hidden; }
+        .app-container .article-card-container .article-card-social .article-card-social-button {
+          background: #ecf2f8;
+          border-radius: 50px;
+          display: flex;
+          flex-flow: row;
+          justify-content: center;
+          align-items: center; }
+          .app-container .article-card-container .article-card-social .article-card-social-button img {
+            padding: .5em; }
+      .app-container .article-card-container .article-card-social.active {
+        background: #48556a;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        height: 50px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        transition: background-color 1s;
+        /* Disabled */
+        /* End Disabled */ }
+        .app-container .article-card-container .article-card-social.active .article-card-social-img {
+          display: none;
+          visibility: hidden; }
+        .app-container .article-card-container .article-card-social.active .article-card-social-name-date {
+          display: none;
+          visibility: hidden; }
+        .app-container .article-card-container .article-card-social.active .article-card-social-active-share {
+          display: initial;
+          visibility: initial; }
+          .app-container .article-card-container .article-card-social.active .article-card-social-active-share p {
+            color: #6d7f97;
+            letter-spacing: 5px;
+            font-weight: 700; }
+        .app-container .article-card-container .article-card-social.active .article-card-social-icons {
+          visibility: initial;
+          display: flex;
+          flex-flow: row;
+          flex: 1;
+          margin-left: .5em; }
+          .app-container .article-card-container .article-card-social.active .article-card-social-icons .article-card-social-icon-box {
+            display: flex;
+            flex-flow: row;
+            margin: 0em .5em; }
+        .app-container .article-card-container .article-card-social.active .article-card-social-button {
+          background: white; } }

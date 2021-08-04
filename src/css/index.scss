@@ -1,0 +1,191 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    background: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.app-container {
+    
+    .article-card-container {
+        display: grid;
+        
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){  
+
+    p {
+        font-size: 13px;
+    }
+
+    .app-container {
+        margin: 5em 2em;
+        line-height: 1.4em;
+
+        .article-card-container {
+            background: white;
+            border-radius: 8px;
+
+            .article-card-image {
+                height: 100%;
+                width: 100%;
+
+                img {
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    height: 180px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .article-card-text {
+                margin-bottom: 1em;
+                padding: 1.7em 1.7em 0em 1.7em;
+
+                h4 {
+                    color: hsl(217, 19%, 35%);
+                    margin-bottom: .5em;
+                }
+
+                p {
+                    color: hsl(214, 17%, 51%);
+                    font-weight: 500;
+                }
+
+            }
+
+            .article-card-social {
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                //padding: 1.7em 1.7em 1em 1.7em;
+                height: 50px;
+                padding: 1em 1.7em 1em 1.7em;
+                transition: background-color 1s;
+
+                .article-card-social-img {
+                    
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;
+                    }
+                }
+
+
+                //Disabled By Default
+                .article-card-social-active-share {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                .article-card-social-name-date {
+                    flex: 1;
+                    margin-left: 1em;
+
+                    #name {
+                        font-weight: 800;
+                        color: hsl(217, 19%, 35%);
+                    }
+
+                    #date {
+                        color: hsl(212, 23%, 69%);
+                    }
+                }
+                
+                //Disabled By Default
+                .article-card-social-icons {
+                    display: none;
+                    visibility: hidden;
+                }
+
+                .article-card-social-button {
+                    background: hsl(210, 46%, 95%);
+                    border-radius: 50px;
+                    display: flex;
+                    flex-flow: row;
+
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        padding: .5em;
+                    }
+                }
+            }
+
+            .article-card-social.active {
+                background: hsl(217, 19%, 35%);
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+
+                height: 50px;
+
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+
+                transition: background-color 1s;
+
+                /* Disabled */
+                .article-card-social-img {
+                    display: none;
+                    visibility: hidden;
+                }
+                .article-card-social-name-date { 
+                    display: none;
+                    visibility: hidden;
+                }
+                /* End Disabled */
+
+                .article-card-social-active-share {
+                    display: initial;
+                    visibility: initial;
+
+                    p {
+                        color: hsl(214, 17%, 51%);
+                        letter-spacing: 5px;
+                        font-weight: 700;
+                    }
+                }
+
+                .article-card-social-icons {
+                    visibility: initial;
+                    display: flex;
+                    flex-flow: row;
+                    flex: 1;
+                    margin-left: .5em;
+                    
+                    
+                    .article-card-social-icon-box {
+                        display: flex;
+                        flex-flow: row;
+                        margin: 0em .5em;
+                        
+                        img {
+                            
+                        }
+                    }
+                }
+
+                .article-card-social-button {
+                    background: white;
+
+                    img {
+                       
+                    }
+                }
+            }
+        }
+    }
+}

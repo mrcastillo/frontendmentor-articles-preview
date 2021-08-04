@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/frontendmentor-articles-preview-components/static/css/main.a617e044.chunk.css",
+    "main.js": "/frontendmentor-articles-preview-components/static/js/main.ac9d671a.chunk.js",
+    "main.js.map": "/frontendmentor-articles-preview-components/static/js/main.ac9d671a.chunk.js.map",
+    "runtime-main.js": "/frontendmentor-articles-preview-components/static/js/runtime-main.dd814e93.js",
+    "runtime-main.js.map": "/frontendmentor-articles-preview-components/static/js/runtime-main.dd814e93.js.map",
+    "static/js/2.946eaf11.chunk.js": "/frontendmentor-articles-preview-components/static/js/2.946eaf11.chunk.js",
+    "static/js/2.946eaf11.chunk.js.map": "/frontendmentor-articles-preview-components/static/js/2.946eaf11.chunk.js.map",
+    "static/js/3.6e3c37cc.chunk.js": "/frontendmentor-articles-preview-components/static/js/3.6e3c37cc.chunk.js",
+    "static/js/3.6e3c37cc.chunk.js.map": "/frontendmentor-articles-preview-components/static/js/3.6e3c37cc.chunk.js.map",
+    "index.html": "/frontendmentor-articles-preview-components/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/frontendmentor-articles-preview-components/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.946eaf11.chunk.js.LICENSE.txt": "/frontendmentor-articles-preview-components/static/js/2.946eaf11.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/frontendmentor-articles-preview-components/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd814e93.js",
+    "static/js/2.946eaf11.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.ac9d671a.chunk.js"
+  ]
+}

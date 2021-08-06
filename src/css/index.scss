@@ -59,7 +59,7 @@ html, body, #root {
                 flex-flow: column;
                 justify-content: space-between;
 
-                /* Disabled By Default */
+                //Disabled By Default
                 .article-card-social-active-share {
                     display: none;
                     visibility: hidden;
@@ -69,13 +69,13 @@ html, body, #root {
                     display: none;
                     visibility: hidden;
                 }
+                //End Disabled By Default
 
-                /* Disabled By Default */
                 .article-card-text {
                     display: flex;
                     flex-flow: column;
                     justify-content: space-evenly;
-                    padding: 2em;
+                    padding: 2em 4em 1em 4em;
                     
                     h4 {
                         font-size: 1.5em;
@@ -93,7 +93,7 @@ html, body, #root {
                     display: flex;
                     flex-flow: row;
                     align-items: center;
-                    padding: 2em;
+                    padding: 1em 4em 2em 4em;
                     
                     .article-card-social-img {
                         height: 100%;
@@ -112,22 +112,76 @@ html, body, #root {
                         height: 100%;
 
                         #name {
-                            font-weight: 800;
                             color: hsl(217, 19%, 35%);
+                            font-weight: 800;
                         }
     
                         #date {
                             color: hsl(212, 23%, 69%);
+                            font-weight: 500;
                         }
                     }
 
                     .article-card-social-button {
                         background: hsl(210, 46%, 95%);
                         border-radius: 50px;
+                        position: relative;
 
                         img {
-                            padding: .5em;
+                            padding: .75em;
                         }
+                    }
+
+                    .article-card-social-desktop-active-box {
+                        display: none;
+                        visibility: hidden;
+                    }
+
+                }
+                
+                //Article Card Social State
+                .article-card-social.active {
+                    //Social Active Box
+                    .article-card-social-desktop-active-box {
+                        display: flex;
+                        visibility: initial;
+                        flex-flow: row;
+                        align-items: center;
+
+                        position: absolute;
+                        bottom: 65px;
+                        left: -105px;
+
+                        background: hsl(217, 19%, 35%);
+                        padding: .5em 2.5em;
+                        border-radius: 12px;
+
+                        #share-desktop {
+                            p {
+                                color: hsl(214, 17%, 70%);
+                                letter-spacing: 3px;
+                                font-weight: 500;
+                                font-size: 13px;
+                            }
+                        }
+
+                        #social-icons-desktop {
+                            display: flex;
+                            flex-flow: row;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    .article-card-social-desktop-active-box:after { 
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 40%;
+                        border-top: 20px solid hsl(217, 19%, 35%);
+                        border-top-color: hsl(217, 19%, 35%);; 
+                        border-left: 20px solid transparent;
+                        border-right: 20px solid transparent; 
                     }
                 }
             }
@@ -244,9 +298,16 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                         img {
                             padding: .5em;
                         }
+
+                        .article-card-social-desktop-active-box {
+                            display: none;
+                            visibility: hidden;
+                        }
                     }
                 }
-    
+                
+
+                //Article Card Social Active State
                 .article-card-social.active {
                     background: hsl(217, 19%, 35%);
                     display: flex;
@@ -269,6 +330,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
                         display: none;
                         visibility: hidden;
                     }
+
                     /* End Disabled */
     
                     .article-card-social-active-share {
@@ -303,7 +365,7 @@ and (-webkit-device-pixel-ratio : 3), (max-device-width : 667px){
     
                     .article-card-social-button {
                         background: white;
-    
+                        
                         img {
                            
                         }

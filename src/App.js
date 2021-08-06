@@ -41,6 +41,7 @@ function App() {
             <div className={"article-card-social-active-share"}>
               <p>SHARE</p>
             </div>
+            {/* END hidden until activated*/}
 
             <div className={"article-card-social-name-date"}>
                 <p id={"name"}>Michelle Appleton</p>
@@ -59,8 +60,27 @@ function App() {
                 <img src={pi} />
               </div>
             </div>
+            {/* END hidden until activated*/}
 
             <div className={"article-card-social-button"} onClick={setActive}>
+                <div className={"article-card-social-desktop-active-box"}>
+                  <div id={"share-desktop"}>
+                    <p>SHARE</p>
+                  </div>
+
+                  <div id={"social-icons-desktop"}>
+                    <div>
+                      <img src={fb} />
+                    </div>
+                    <div>
+                      <img src={tw} />
+                    </div>
+                    <div>
+                      <img src={pi} />
+                    </div>
+                  </div>
+
+                </div>
                 <img src={share} />
             </div>
           </div>

@@ -9,7 +9,7 @@ html, body, #root {
   background: #ecf2f8;
   font-family: 'Manrope', sans-serif; }
 
-@media only screen and (min-device-width: 813px) {
+@media only screen and (min-device-width: 813px) and (min-width: 901px) {
   #root {
     display: flex;
     flex-flow: column;
@@ -125,7 +125,7 @@ html, body, #root {
           border-left: 20px solid transparent;
           border-right: 20px solid transparent; } }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3), (max-device-width: 667px) {
+@media only screen and (min-width: 1px) and (max-width: 900px) {
   p {
     font-size: 13px; }
   .app-container {
